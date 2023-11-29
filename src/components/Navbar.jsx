@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles.js";
 import { navLinks } from "../constants";
@@ -67,7 +67,7 @@ const Navbar = () => {
                           active === link.title
                             ? "text-white"
                             : "text-secondary"
-                        } font-poppins font-medium cursor-pointer text-[16px]`}
+                        } font-poppins font-medium cursor-pointer text-[16px] mt-2 mb-2`}
                         onClick={() => {
                           setActive(link.title);
                           setToggle(!toggle);
