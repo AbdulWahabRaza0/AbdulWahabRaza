@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion.js";
-// eslint-disable-next-line react/prop-types
+import { SectionWrapper } from "./hoc/index.js";
+// eslint-disable-next-line react/prop-types, react-refresh/only-export-components
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <>
@@ -33,6 +34,7 @@ const ServiceCard = ({ index, title, icon }) => {
     </>
   );
 };
+// eslint-disable-next-line react-refresh/only-export-components
 const About = () => {
   return (
     <>
@@ -58,4 +60,5 @@ const About = () => {
   );
 };
 
-export default About;
+// eslint-disable-next-line react-refresh/only-export-components
+export default SectionWrapper(About, "about");

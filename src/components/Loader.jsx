@@ -13,7 +13,7 @@ const Loader = () => {
           marginTop: 40,
         }}
       >
-        {progress.toFixed(2)}%
+        {progress ? progress?.toFixed(2) : null}%
       </p>
     </Html>
   );
